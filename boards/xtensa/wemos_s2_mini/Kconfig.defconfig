@@ -1,0 +1,15 @@
+# Wemos S2 mini board configuration
+
+# Copyright (c) 2021 Espressif Systems (Shanghai) Co., Ltd.
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD
+	default "wemos_s2_mini"
+	depends on BOARD_WEMOS_S2_MINI
+
+config ENTROPY_GENERATOR
+	default y
+
+config HEAP_MEM_POOL_SIZE
+	default 32768 if WIFI
+	default 4096

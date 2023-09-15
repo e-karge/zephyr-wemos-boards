@@ -1,0 +1,22 @@
+identifier: wemos_s2_mini
+name: Wemos S2 mini
+type: mcu
+arch: xtensa
+toolchain:
+  - zephyr
+supported:
+  - adc
+  - dac
+  - gpio
+  - i2c
+  - watchdog
+  - uart
+  - nvs
+  - pwm
+  - spi
+  - counter
+  - entropy
+testing:
+  ignore_tags:
+    - net
+    - bluetooth

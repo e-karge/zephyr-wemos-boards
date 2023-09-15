@@ -1,0 +1,10 @@
+# Copyright (c) 2023 Espressif Systems (Shanghai) Co., Ltd.
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_WEMOS_S2_MINI
+	bool "Wemos S2 mini Board"
+	depends on SOC_SERIES_ESP32S2
+
+choice SOC_PART_NUMBER
+	default SOC_ESP32S2_FN4R2
+endchoice
